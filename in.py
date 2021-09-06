@@ -17,7 +17,7 @@ lj.pair_coeff.set('A', 'A', epsilon=0.6, sigma=1.0)
 #specify force
 all = hoomd.group.all();
 N = len(all);
-Act = 95
+Act = 90
 theta = [2.0*math.pi*numpy.random.random_sample() for i in range(N)]
 activity = [(Act*math.cos(1), Act*math.sin(1),0) for i in range(N)]
 for i in range(N):
